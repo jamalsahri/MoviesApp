@@ -18,7 +18,7 @@ public interface AppConfigConst {
     public static final String DB_NAME = "movielens";
     public static final String URL    = "jdbc:mysql://localhost:3308/"+DB_NAME;
     public static final String USER   = "root";
-    public static final String PWD    = "JES@db/*336782*/";
+    public static final String PWD    = "";
     
     // TEMPLATE CONST
     public static final String VIEWS_PATH = "/com/moviesapp/view/";
