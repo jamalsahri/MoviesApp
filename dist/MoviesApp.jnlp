@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="MoviesApp.jnlp">
+  <information>
+    <title>MoviesApp</title>
+    <vendor>Jamal</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\MoviesApp-Preloader.jar" size="3038" download="progress" />
+    <jar href="MoviesApp.jar" size="1505701" download="eager" />
+    <jar href="lib\GNAvatarView-1.0-rc.jar" size="26082" download="eager" />
+    <jar href="lib\bson-3.9.1.jar" size="481202" download="eager" />
+    <jar href="lib\controlsfx-8.40.14.jar" size="1215643" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\gson-2.8.2.jar" size="232932" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2206016" download="eager" />
+    <jar href="lib\mysql-connector-java-8.0.16.jar" size="2293144" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="com.moviesapp.App"  name="MoviesApp"  preloader-class="moviesapp.preloader.MoviesApp_Preloader"/>
+  <update check="always"/>
+</jnlp>

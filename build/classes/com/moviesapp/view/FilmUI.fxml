@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gn.GNAvatarView?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="rootApp" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.moviesapp.controller.FilmUIController">
+   <children>
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+         <top>
+            <HBox prefHeight="60.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lbl_titre" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="60.0" style="-fx-background-color: #eae5e530; -fx-background-radius: 5;" text="Adieu les cons" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="15.0" />
+               </BorderPane.margin>
+            </HBox>
+         </top>
+         <center>
+            <GNAvatarView fx:id="avatar_affiche" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" stroke="#ffffff00" type="RECT" BorderPane.alignment="CENTER_LEFT" />
+         </center>
+         <right>
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="350.0" spacing="3.0" BorderPane.alignment="TOP_CENTER">
+               <children>
+                  <Label fx:id="lbl_annee_prod" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="30.0" text="21 octobre 2020" textFill="#eae5e5">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="0.0" style="-fx-background-color: #eae5e530; -fx-background-radius: 5;">
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbl_note" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" text="7/10" textFill="#eae5e5">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="0.0" style="-fx-background-color: #eae5e530; -fx-background-radius: 5;">
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                  </Label>
+                  <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" text="Participants" textFill="#eae5e5">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" top="3.0" />
+                           </padding>
+                        </Label>
+                        <JFXListView fx:id="lv_participants" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="200.0" VBox.vgrow="ALWAYS" />
+                     </children>
+                     <padding>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </VBox>
+         </right>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+         <bottom>
+            <VBox maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lbl_genres" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="50.0" style="-fx-border-color: #eae5e530; -fx-border-radius: 5;" text="Comédie dramatique/Drame" textFill="#eae5e5">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXTextArea fx:id="ta_synopsis" editable="false" focusColor="#405aa800" prefHeight="80.0" promptText="Lorsque Suze Trappet apprend à 43 ans qu'elle est sérieusement malade, elle décide de partir à la recherche de l'enfant qu'elle a été forcée d'abandonner quand elle avait 15 ans. Sa quête administrative va lui faire croiser JB, quinquagénaire en plein burn out, et M. Blin, archiviste aveugle d'un enthousiasme impressionnant. À eux trois, ils se lancent dans une quête aussi spectaculaire qu'improbable." unFocusColor="#4d4d4d00" />
+               </children>
+               <padding>
+                  <Insets bottom="15.0" top="15.0" />
+               </padding>
+            </VBox>
+         </bottom>
+      </BorderPane>
+   </children>
+   <stylesheets>
+      <URL value="@../media/css/css.css" />
+      <URL value="@../media/css/css-3.css" />
+   </stylesheets>
+</StackPane>

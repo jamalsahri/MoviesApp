@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gn.GNAvatarView?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="450.0" minWidth="750.0" styleClass="rootApp" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.moviesapp.controller.PersonUIController">
+   <children>
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+         <top>
+            <HBox prefHeight="60.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lbl_nomPerson" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="60.0" style="-fx-background-color: #eae5e530; -fx-background-radius: 5;" text="Albert Dupontel" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="15.0" />
+               </BorderPane.margin>
+            </HBox>
+         </top>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+         <center>
+            <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="10.0" BorderPane.alignment="TOP_CENTER">
+               <children>
+                  <JFXButton fx:id="btn_prev" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#prev" text=" " textFill="TRANSPARENT" HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <FontAwesomeIconView fill="#9a9292" glyphName="CHEVRON_LEFT" size="16" />
+                     </graphic>
+                  </JFXButton>
+                  <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#showFilmLeft" style="-fx-border-color: #eae5e530; -fx-border-radius: 5;" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <children>
+                        <GNAvatarView fx:id="avatar_affiche_1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stroke="#ffffff00" type="RECT" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                        </GNAvatarView>
+                        <Label fx:id="lbl_titre_1" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="30.0" text="21 octobre 2020" textFill="#eae5e5">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="0.0" style="-fx-background-color: #eae5e530; -fx-background-radius: 5;">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="lbl_anneeProd_1" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="30.0" text="21 octobre 2020" textFill="#eae5e5">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="0.0" style="-fx-background-color: #eae5e530; -fx-background-radius: 5;">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="lbl_role_1" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="30.0" text="21 octobre 2020" textFill="#eae5e5">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#showFilmMid" style="-fx-border-color: #eae5e530; -fx-border-radius: 5;" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <children>
+                        <GNAvatarView fx:id="avatar_affiche_2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stroke="#ffffff00" type="RECT" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                        </GNAvatarView>
+                        <Label fx:id="lbl_titre_2" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="30.0" text="21 octobre 2020" textFill="#eae5e5">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="0.0" style="-fx-background-color: #eae5e530; -fx-background-radius: 5;">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="lbl_anneeProd_2" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="30.0" text="21 octobre 2020" textFill="#eae5e5">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="0.0" style="-fx-background-color: #eae5e530; -fx-background-radius: 5;">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="lbl_role_2" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="30.0" text="21 octobre 2020" textFill="#eae5e5">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#showFilmRight" style="-fx-border-color: #eae5e530; -fx-border-radius: 5;" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <children>
+                        <GNAvatarView fx:id="avatar_affiche_3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stroke="#ffffff00" type="RECT" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                        </GNAvatarView>
+                        <Label fx:id="lbl_titre_3" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="30.0" text="21 octobre 2020" textFill="#eae5e5">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="0.0" style="-fx-background-color: #eae5e530; -fx-background-radius: 5;">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="lbl_anneeProd_3" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="30.0" text="21 octobre 2020" textFill="#eae5e5">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="0.0" style="-fx-background-color: #eae5e530; -fx-background-radius: 5;">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbl_role_3" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="30.0" text="21 octobre 2020" textFill="#eae5e5">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </VBox>
+                  <JFXButton fx:id="btn_next" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#next" text=" " textFill="TRANSPARENT" HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <FontAwesomeIconView fill="#9a9292" glyphName="CHEVRON_RIGHT" size="16" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+   <stylesheets>
+      <URL value="@../media/css/css-3.css" />
+      <URL value="@../media/css/css.css" />
+   </stylesheets>
+</StackPane>

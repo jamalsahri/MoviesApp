@@ -1,0 +1,14 @@
+.root{
+	-fx-background-color:#1f2027;
+}
+.menu:hover{
+    -fx-cursor : hand;
+    -fx-text-fill: #6254b6;
+    -fx-background-radius:10;
+}
+.sign-up{
+    -fx-cursor : hand;
+    -fx-background-color:white;
+    -fx-background-radius:5;
+    -fx-border-radius:5;
+}
